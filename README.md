@@ -20,7 +20,7 @@ deletConfig 删除配置项
 
 publishAll 批量发布配置项
 
-getNamespaceItems 获取整个
+getNamespaceItems 获取整个namespace的配置列表
 
 ## 后续规划
 v1.0.0 基本的增删改查和发布能力

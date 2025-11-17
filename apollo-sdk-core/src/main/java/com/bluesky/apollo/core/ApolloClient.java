@@ -5,6 +5,12 @@ import okhttp3.*;
 
 import java.io.IOException;
 
+/**
+ * Apollo 客户端，封装 Apollo Portal OpenAPI的基础调用
+ *
+ * @author lantian
+ * @date 2025/11/17
+ */
 @Data
 public class ApolloClient {
     private final OkHttpClient client = new OkHttpClient();

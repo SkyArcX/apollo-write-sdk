@@ -4,6 +4,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.Map;
 
+/**
+ * 对外提供的易用API
+ *
+ * @author lantian
+ * @date 2025/11/17
+ */
 public class ApolloConfigServiceCore {
     private final ApolloClient client;
     private final ObjectMapper mapper = new ObjectMapper();
