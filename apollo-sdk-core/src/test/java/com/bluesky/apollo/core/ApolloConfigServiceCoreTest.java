@@ -20,6 +20,6 @@ public class ApolloConfigServiceCoreTest {
 
     public void testPublishSingle() throws Exception{
         // 模拟create item成功
-        when(mockClient.post(contains("/items"), ·anyString())).thenReturn("{}");
+        when(mockClient.post(contains("/items"), anyString())).thenReturn("{}");
     }
 }
