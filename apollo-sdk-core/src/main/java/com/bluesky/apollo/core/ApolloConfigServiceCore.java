@@ -2,7 +2,7 @@ package com.bluesky.apollo.core;
 
 import com.bluesky.apollo.exception.ApolloException;
 import com.bluesky.apollo.model.ItemResponse;
-import com.bluesky.apollo.model.PulishItemRequest;
+import com.bluesky.apollo.model.PublishItemRequest;
 import com.bluesky.apollo.model.ReleaseRequest;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -87,7 +87,7 @@ public class ApolloConfigServiceCore {
         try {
             String path = String.format("/openapi/v1/apps/%s/envs/%s/clusters/%s/namespaces/%s/items/",
                     urlEncode(appId), urlEncode(env), urlEncode(cluster), urlEncode(namespace));
-            PulishItemRequest request = new PulishItemRequest(key, value, comment, operator);
+            PublishItemRequest request = new PublishItemRequest(key, value, comment, operator);
             String jsonBody = mapper.writeValueAsString(request);
             client.post(path, jsonBody);
         } catch (Exception e) {
