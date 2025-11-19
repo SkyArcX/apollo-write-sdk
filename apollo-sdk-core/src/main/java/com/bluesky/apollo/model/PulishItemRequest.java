@@ -9,7 +9,6 @@ import lombok.Data;
  * @author lantian
  * @date 2025/11/17
  */
-@Data
 public class PulishItemRequest {
 
     private String key;
@@ -18,4 +17,11 @@ public class PulishItemRequest {
 
     @JsonProperty("dataChangeCreatedBy")
     private String dataChangeCreatedBy;
+
+    public PulishItemRequest(String key, String valute, String comment, String dataChangeCreatedBy) {
+        this.key = key;
+        this.valute = valute;
+        this.comment = comment;
+        this.dataChangeCreatedBy = dataChangeCreatedBy;
+    }
 }
